@@ -1,3 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 50px;
+        }
+
+        header {
+            /* font-family: Arial, sans-serif; */                 
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;            
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;            
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;            
+        }
+
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        } 
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a90e2;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        figure {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+
 <body>
-    <h1>Hello Zamzameh!</h1>
+    <header>
+        <h1>Hello, Zamzameh!</h1>  
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+
+            <form id="contact_info">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Aman Alijani">
+      
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com">
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="your message"></textarea>
+
+                <button type="submit">Submit</button>
+
+                <figure>
+                    <img src="images/profile-photo.jpeg" alt="Site owner photo" width="300">
+                </figure>
+        
+            </form>
+        </section>
+    </main>
+
 </body>
+</html>
